@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane stylesheets="main.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.dark.MainContr">
+   <top>
+      <HBox fx:id="top_bar" alignment="CENTER_LEFT">
+         <AnchorPane fx:id="icon" />
+         <Label HBox.hgrow="ALWAYS" maxWidth="Infinity" fx:id="title"/>
+         <HBox spacing="5">
+            <Button mnemonicParsing="false" fx:id="coll" onAction="#coll" />
+            <Button mnemonicParsing="false" fx:id="size" onAction="#size" />
+            <Button mnemonicParsing="false" fx:id="close" onAction="#close" />
+         </HBox>
+      </HBox>
+   </top>
+   <center>
+      <StackPane fx:id="current_scane" />
+   </center>
+</BorderPane>

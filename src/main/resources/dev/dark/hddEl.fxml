@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx/24.0.1" 
+      xmlns:fx="http://javafx.com/fxml/1"
+      style="-fx-padding: 10; -fx-background-color:rgb(194, 195, 216); -fx-background-radius: 5;"
+      spacing="15"
+      maxWidth="Infinity"
+      alignment="CENTER_LEFT"
+      fx:controller="dev.dark.Hdd">
+   
+   <VBox minWidth="40" minHeight="40"
+         alignment="CENTER">
+      <AnchorPane />
+   </VBox>
+   
+   <VBox HBox.hgrow="ALWAYS" spacing="5">
+      <Label fx:id="nameLabel" text="hdd name" 
+             style="-fx-text-fill: black;"
+             maxWidth="Infinity"
+             wrapText="true"/>
+      
+      <ProgressBar fx:id="progressBar" 
+                  progress="0.7" 
+                  maxWidth="Infinity"
+                  prefHeight="10"
+                  style="-fx-accent: #27ae60;"/>
+   </VBox>
+</HBox>
